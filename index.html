@@ -188,49 +188,33 @@ body {
   gap: 65px;
 } 
 
-.desk:hover .hoverdesk {
-  display: block;
-  font-style: italic;
+.hover, .hoverentrance, .hoverexit, .hoverdesk, .hoverbathroom {
+  opacity:0;
 }
 
-.hoverdesk {
-  display: none;
+.desk:hover .hoverdesk {
+  opacity:1;
+  font-style: italic;
 }
 
 .bathroom:hover .hoverbathroom {
-  display: block;
+  opacity:1;
   font-style: italic;
-}
-
-.hoverbathroom {
-  display: none;
 }
 
 .hover:hover .hovertext {
-  display: block;
+  opacity:1;
   font-style: italic;
-}
-
-.hover {
-  display: none;
 }
 
 .entrance:hover .hoverentrance {
-  display: block;
+  opacity:1;
   font-style: italic;
-}
-
-.hoverentrance {
-  display: none;
 }
 
 .exit:hover .hoverexit {
-  display: block;
+  opacity:1;
   font-style: italic;
-}
-
-.hoverexit {
-  display: none;
 }
 
 /* IMAGE MAPS */
@@ -371,6 +355,7 @@ If you can suss out the underground parking for next time, you won’t have to m
     &lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="1-GoingUP5" tags="" position="2375,725" size="100,100">&lt;div class=&quot;page&quot;&gt;
 	&lt;div class=&quot;text&quot;&gt;
     &lt;h2&gt;Going UP to level &lt;u&gt;5&lt;/u&gt;&lt;/h2&gt;
+    Keep a level head—remember what joys you will meet at your desired destination.
     
     [[(continue.)|Level 5-arrived]]
     
@@ -459,6 +444,7 @@ If you can suss out the underground parking for next time, you won’t have to m
     &lt;&lt;audio &quot;level-2&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="2-GoingUP5" tags="" position="2375,825" size="100,100">&lt;div class=&quot;page&quot;&gt;
 	&lt;div class=&quot;text&quot;&gt;
     &lt;h2&gt;Going UP to level &lt;u&gt;5&lt;/u&gt;&lt;/h2&gt;
+Keep a level head—remember what joys you will meet at your desired destination.
 
 	[[(continue.)|Level 5-arrived]]
 
@@ -552,6 +538,7 @@ If you can suss out the underground parking for next time, you won’t have to m
       &lt;&lt;audio &quot;level-3&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="3-GoingUP5" tags="" position="2375,925" size="100,100">&lt;div class=&quot;page&quot;&gt;
 	&lt;div class=&quot;text&quot;&gt;
     &lt;h2&gt;Going UP to level &lt;u&gt;5&lt;/u&gt;&lt;/h2&gt;
+Keep a level head—remember what joys you will meet at your desired destination.
 
 	[[(continue.)|Level 5-arrived]]
 
@@ -637,6 +624,7 @@ If you can suss out the underground parking for next time, you won’t have to m
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="4-GoingUP5" tags="" position="2375,1025" size="100,100">&lt;div class=&quot;page&quot;&gt;
 	&lt;div class=&quot;text&quot;&gt;
     &lt;h2&gt;Going UP to level &lt;u&gt;5&lt;/u&gt;&lt;/h2&gt;
+Keep a level head—remember what joys you will meet at your desired destination.
 
 
 	[[(continue.)|Level 5-arrived]]
@@ -886,6 +874,7 @@ If you can suss out the underground parking for next time, you won’t have to m
          &lt;&lt;audio &quot;level-6&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="6-GoingDOWN5" tags="" position="2375,1225" size="100,100">&lt;div class=&quot;page&quot;&gt;
 	&lt;div class=&quot;text&quot;&gt;
     &lt;h2&gt;Going DOWN to level &lt;u&gt;5&lt;/u&gt;&lt;/h2&gt;
+    Keep a level head—remember what joys you will meet at your desired destination.
     
     [[(continue.)|Level 5-arrived]]
     
@@ -1172,7 +1161,7 @@ You successfully used a lift. That was, in fact, the job description. But I am s
 	&lt;div class=&quot;text&quot;&gt;
     &lt;br&gt;It’s actually pretty good here.
 
-Not perfect, but that doesn’t matter. You try to remember what the other floors were like, the other landmarks on your journey. But you can faintly remember how you got here.
+Not perfect, but that doesn’t matter. You try to remember what the other floors were like, the other landmarks on your journey. You can faintly remember how you got here.
 
 They were insignificant—like fragments of a dream, forgotten after waking—but you know they helped to release and rationalise those fragments that will always be a part of you. And those are what make your courage admirable.
 
@@ -1257,6 +1246,7 @@ If you can suss out the underground parking for next time, you won’t have to m
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="65" name="G-GoingUP5" tags="" position="2375,625" size="100,100">&lt;div class=&quot;page&quot;&gt;
 	&lt;div class=&quot;text&quot;&gt;
     &lt;h2&gt;Going UP to level &lt;u&gt;5&lt;/u&gt;&lt;/h2&gt;
+Keep a level head—remember what joys you will meet at your desired destination.
 
 	[[(continue.)|Level 5-arrived]]
 
@@ -1760,7 +1750,7 @@ This is why you came here. But how much do you want what is here?
 	&lt;div class=&quot;text&quot;&gt;
 	&lt;br&gt;That was a close one—you almost made it to Level 5! 
 
-There&#39;s a light breeze out here, nothing that can blow you off course. But it wakes you up and gives you something to focus on. 
+There&#39;s a light breeze out here. Nothing that can blow you off course, but it wakes you up and gives you something to focus on. 
     
 When you&#39;re climbing a mountain, a hill, a tower...it&#39;s always easier to go down than up. Worse for your knees, but easier. 
 
@@ -2104,6 +2094,7 @@ This is the true beginning of your journey. You will have many chances to [[leav
 &lt;&lt;audio &quot;level-ug&quot; stop&gt;&gt;</tw-passagedata><tw-passagedata pid="114" name="UG-GoingUP5" tags="" position="2375,525" size="100,100">&lt;div class=&quot;page&quot;&gt;
 	&lt;div class=&quot;text&quot;&gt;
     &lt;h2&gt;Going UP to level &lt;u&gt;5&lt;/u&gt;&lt;/h2&gt;
+Keep a level head—remember what joys you will meet at your desired destination.
 
 	[[(continue.)|Level 5-arrived]]
 
